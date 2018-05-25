@@ -1,0 +1,45 @@
+/*Instructions from your teacher:
+JavaScript: Fahrenheit and Centigrade Temperatures: 
+
+Fahrenheit and centigrade are two temperature scales in use today.  The Fahrenheit scale was developed by the German physicist Daniel  Gabriel Fahrenheit . In the Fahrenheit scale, water freezes at 32  degrees and boils at 212 degrees. 
+
+The centigrade scale, which is also called the Celsius scale, was  developed by Swedish astronomer Andres Celsius. In the centigrade scale,  water freezes at 0 degrees and boils at 100 degrees. 
+
+ Centigrade and Fahrenheit conversion formulas:
+
+C = (5/9) * (F - 32)
+
+F = (C × 1.8) + 32  
+
+
+Sample Output:
+
+60°C is 140°F.
+45°F is 7.222222222222222°C.
+
+
+Note:
+Instead of document.write(), use console.log() in repl.it
+
+
+To print the degrees symbol, use '\xB0' 
+
+*/
+
+
+function cToF(celsius) {
+  // this is celsius to Fahrenheit
+  var celsius_variable = celsius; //this is the variable of the celsius degree below which would be 60.  
+  var celsius_to_farenheit_conversion = (celsius_variable * 1.8) + 32; //this converts celsius to farenit.
+  console.log (celsius_variable + "°C is " + celsius_to_farenheit_conversion + "°F");
+  //to be able to convert this, we had to make a variable that equaled the celsius input and an eqution variable then we would finally print out the answer.
+}
+function fToC(fahrenheit) {
+  // this is Fahrenheit to Celsius
+  var fahrenheit_variable = fahrenheit;
+  var fahrenheit_to_celsius_conversion = (5/9) * (fahrenheit_variable - 32);
+  console.log (fahrenheit_variable + "°F is " + fahrenheit_to_celsius_conversion + "°C");
+}
+
+cToF(60);
+fToC(45);
