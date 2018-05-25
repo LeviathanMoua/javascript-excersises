@@ -1,0 +1,41 @@
+/*nstructions from your teacher:
+Write a function called "computeAverageLengthOfWords".
+
+Given two words, "computeAverageLengthOfWords" returns the average of their lengths.
+
+var output = computeAverageLengthOfWords('code', 'programs');
+console.log(output); // --> 6
+*/
+
+function computeAverageLengthOfWords(word1, word2) {
+  // your code here
+  var average = parseInt(word1.length + word2.length);
+  /*this code of line is equivalent to 
+  average = len(word2,word2)
+  
+  */
+  var a = average/2;
+  return a;
+}
+
+computeAverageLengthOfWords('code','programs')
+
+
+/* this entire code is equivelant to 
+
+
+def computeAverageLengthOfWords(word1, word2):
+  wordone = len(word1)
+  wordtwo = len(word2)
+  average = (wordone + wordtwo)
+  a = average/2
+  print (a)
+
+
+computeAverageLengthOfWords('code','programs')
+
+from python.
+
+
+
+*/
