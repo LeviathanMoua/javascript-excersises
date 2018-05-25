@@ -1,0 +1,44 @@
+/*
+Instructions from your teacher:
+Given 3 int values, a b c, return their sum. However, if one of the  values is the same as another of the values, it does not count towards  the sum. 
+
+Examples:
+loneSum(1, 2, 3) → 6
+loneSum(3, 2, 3) → 2
+loneSum(3, 3, 3) → 0 
+
+Copy and paste this below to test it.
+
+var output = loneSum(3,2,3);
+console.log(output)
+
+*/
+
+
+function loneSum(a,b,c){
+  if(a != b && a != c && b != a && b != c && c != a && c != b){
+        return a + b + c
+  }
+  if(a == b && a == c && b == a && b == c && c == a && c == b){
+      return 0
+    }
+    
+    if(a == b){
+      return c
+    }else if (a == c){
+      return b
+    }else if (b == a){
+      return c
+    }else if (c == a){
+      return b
+    }else if(b == c){
+      return a
+    }else if(c == b){
+      return a
+    }
+    
+    
+    
+}
+var output = loneSum(2,2,2);
+console.log(output);
