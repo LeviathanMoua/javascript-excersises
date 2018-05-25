@@ -1,0 +1,27 @@
+/*
+
+Instructions from your teacher:
+Create a simple function named rightTriangle to test 3 numbers (a, b, c) to see if they create a right triangle or not. You can assume the first value is always a, second is b, and third is c. Look at the given equation below. If the equation is true, return true, otherwise return false.
+
+Equation
+
+
+
+
+Example:
+rightTriangle(3, 4, 5)  // true;
+rightTriangle(5, 6, 7) // false
+rightTriangle(5, 12, 13) // true
+
+*/
+
+function rightTriangle(a, b, c){
+  a2 = a*a;
+  b2 = b*b;
+  c2 = c*c;
+  if(a2 + b2 == c2){
+    return true;
+  }else{
+    return false;
+  }
+}
