@@ -1,0 +1,71 @@
+/* Instructions from your teacher:
+Write a function called "getLongestWordOfMixedElements".
+
+Given an array of mixed types, "getLongestWordOfMixedElements" returns the longest string in the given array.
+
+Notes:
+* If the array is empty, it should return an empty string ("").
+* If the array contains no strings; it should return an empty string.
+
+Copy and paste this outside the function to test it.
+
+var output = getLongestWordOfMixedElements([3, 'word', 5, 'up', 3, 1]);
+console.log(output); // --> 'word'
+
+*/
+
+  // your code here
+  /*I want to find the longest string in the array.
+  If the array has nothing at all in it, then it
+  should return "".  If it contains no strings,
+  then it should only return an empty string as well.  
+  
+  We will have to split each word or group of
+  characters into an array.  then split the words
+  in each array to check which word is bigger.  
+  
+  We will also want a count variablle that counts
+  the largest word.  
+  
+  for example, let us use this sentence:
+  
+  I really love a big cake.  
+  
+  Step 1: 
+  We will split each word into an array(we will
+  be using the .push command to put the words
+  into an array).
+  
+  Step 2: 
+  Then split
+  the characters of each word into an array.  
+  
+  Although now that I think about it; for step 2,
+  we still wouldn't be able to find the largest
+  word because if we were to search for the 
+  length of the word in the array, it would
+  only return the length of the whole array
+  unless there was a way to check the length
+  of a certain word in step 1.  (We wouldn't 
+  return the length because  
+  teacher wants us to return the largest word.)
+  
+  
+  NOTE TO SELF:  Do we have to split the array though?
+  I think that our teacher had already splitted it for us.  
+  */
+
+function getLongestWordOfMixedElements(arr) {
+  // your code here
+  max = "";
+  for (i = 0; i < arr.length; i++){
+    if (arr[i].length > max.length){
+      max = arr[i];
+    }
+
+  }
+  return max;
+}
+
+var output = getLongestWordOfMixedElements([]);
+console.log(output); // --> 'word'
