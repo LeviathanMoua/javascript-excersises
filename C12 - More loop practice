@@ -1,0 +1,39 @@
+/*
+Instructions from your teacher:
+Write a JavaScript function which iterates the integers from 1 to n.  
+BUT... for multiples of 3 add "Owasso" to the array instead of the number and for the multiples of five, add "Rams" to the array. 
+
+For numbers which are multiples of both three and five print "OwassoRams".
+
+Very similar to A34.
+
+Add the elements to an array!
+
+Copy and paste this OUTSIDE the function to test your code.
+
+var output = owassoRams(15);
+console.log(output);
+*/
+
+function owassoRams(n){
+  count = 1;
+  hello = [];
+  while (count < n+1){
+    if (count%3 === 0 && count%5 === 0){
+      hello.push("OwassoRams");
+      count++;
+    } else if (count%3 === 0){
+      hello.push("Owasso");
+      count++;
+  } else if (count%5 === 0){
+    hello.push("Rams");
+    count++;
+  }else{
+    hello.push(count);
+    count++;
+  }
+  }
+  return (hello)
+}
+
+owassoRams(15);
